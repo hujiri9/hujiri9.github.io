@@ -1,0 +1,53 @@
+
+<!doctype html>
+
+<html>
+<head>
+<link href="dist/image-compare-viewer.min.css" rel="stylesheet">
+<style>
+  .container { margin: 150px auto; max-width: 960px; }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h1>Image Compare Viewer </h1>
+  <h2>Chapultepe</h2>
+  <div id="image-compare1">
+  <img src="../images/p12-diapo-007-a.jpg" alt="" />
+  <img src="../images/p12-diapo-007-b.jpg" alt="" />
+</div>
+
+	<h4>
+<a href="../index.html"> Return main page</a>
+	</h4>
+<p></p>
+<p></p>
+
+<h4>
+<p>
+García Cubas, Antonio. Atlas pintoresco é histórico de los Estados Unidos Mexicanos. México, Debray Sucesores, 1885. Map. https://www.loc.gov/item/
+2008621671/.
+</p>
+
+<p>
+This image is licensed under MIT License. All rights reserved. For any inquires of this image please contact hujiri9@protonmail.ch
+</p>
+</h4>
+</div>
+<script src="dist/image-compare-viewer.min.js"></script>
+<script>
+const element = document.getElementById("image-compare1");
+
+const viewer = new ImageCompare(element,{addCircle: true}).mount();
+const element2 = document.getElementById("image-compare2");
+
+const viewer2 = new ImageCompare(element2,{
+  verticalMode: true,
+  addCircle: true
+}).mount();
+</script>
+
+</body>
+</html>
+
